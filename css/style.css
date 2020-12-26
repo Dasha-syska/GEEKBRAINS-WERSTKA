@@ -231,22 +231,17 @@ button:active, button:focus {
 
 }
 
-.selection_2_index {
-    display: flex;
-    margin-left: 240px;
-    margin-right: 240px;
-    margin-top: 63px;
-    position: relative;
-}
 
-.selection_2_index_table {
+.selection_stock_table {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     line-height:  60px;
+    width:1140px;
+    margin-top: 63px;
 }
 
-.selection_3_text {
+.selection_FeturedItems_text {
     margin-top: 97px;
     line-height: 42px;
     text-align: center;
@@ -280,7 +275,7 @@ button:active, button:focus {
     position: relative;
 }
 
-.selection_4_index {
+.selection_addcart {
    height: 800px;
     display: flex;
     margin-left: 240px;
@@ -402,7 +397,7 @@ margin-top: 48px;
 
 
 
-    .selection_2_index_img {
+    .selection_stock_img {
         position: relative;
     }
 
@@ -678,7 +673,7 @@ margin-top: 48px;
 .arrow {
     display: none;
     position: absolute;
-    margin-top: -35px;
+    margin-top: -32px;
     margin-left: 130px;;
     color: white;
     font-size: 18px;
