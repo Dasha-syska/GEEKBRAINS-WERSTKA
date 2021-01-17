@@ -21,7 +21,7 @@ main {
 
 }
 
-#circle {
+.circle {
         width: 19px;
         height: 19px;
         border-radius: 25px;
@@ -66,6 +66,10 @@ main {
     fill: #6F6E6E;
 }
 
+.form_input-text {
+    padding-left: 10px;
+}
+
 button:active, button:focus {
     outline: none;
   }
@@ -85,8 +89,7 @@ button:active, button:focus {
     background-color: #FFFFFF;
     width: 232px;
     height: 764px;
-    margin-top: 840px;
-    margin-left: 1155px;
+   right: 0;
     z-index: 1;
 }
 
@@ -276,7 +279,7 @@ button:active, button:focus {
 }
 
 .selection_addcart {
-   height: 800px;
+   height: 1192px;
     display: flex;
     margin-left: 240px;
     margin-right: 240px;
@@ -318,21 +321,22 @@ button:active, button:focus {
     display: flex;
     justify-content: center;
     width: 211px;
-    height: 47px;
+    height: 33px;
     border: 1px solid #FF6A6A ;
     color: #F26376;
     text-align: center;
     background-color: white;
+    text-decoration: none;
+    padding-top: 14px;
+}
+
+.button_browse-div {
+    margin:48px 695px 95px 693px;
 }
 
 .button_browse:hover {
     background-color: #F16D7F;
     color: white;
-}
-
-.button_browse-div {
-margin-left: 450px;
-margin-top: 48px;
 }
 
 
@@ -406,7 +410,7 @@ margin-top: 48px;
         width: 1600px;
         height: 341px;
         background-color: #222224;
-        margin-top: 620px;
+
         list-style-type: none;
         display: inline-block;
     }
@@ -497,9 +501,9 @@ margin-top: 48px;
     display: flex;
     justify-content: space-between;
     width: 145px;
-    margin-top: 24px;
-    margin-left: 1222px;
-    position: relative;
+    position: absolute;
+    padding-left: 655px;
+    margin-top: -11px;
 }
 
 
@@ -610,7 +614,7 @@ margin-top: 48px;
     font-weight: 300;
     font-size: 24px;
     color: black;
-    line-height: 40px;
+    line-height: 36px;
 
 }
 .registration-block_list > li{
@@ -653,6 +657,7 @@ margin-top: 48px;
     .registration-block_information {
     float:right;
     width:652px;
+    margin-top: 31px;
     }
 
     
@@ -682,11 +687,6 @@ margin-top: 48px;
 }
     .registration-block-form_button:hover + .arrow { 
         display: block;}
-
-
-
-
-
 
         .index-selection_photos {
             position:relative;
@@ -876,7 +876,7 @@ margin-top: 48px;
             margin-left: 20px;
         }
           
-        input[type="e-mail"] {
+        input[type="email"] {
             width:300px;
             height:49px;
              background-color:#E1E1E1;
@@ -916,49 +916,9 @@ margin-top: 48px;
               position:absolute;
           }
           
-          input[type="name"]{
-              width: 360px;
-              height:45px;
-              margin-top: 20px;
-              border: 1px solid #A4A4A4;
-          }
-
-          input[type="radio"] {
-            display: none;
-          }
-
-          .checkbox-gender {
-              display: flex;
-              width:150px;
-              justify-content: space-between;
-              margin-top: 31px;
-              margin-left: 27px;
-          }
-          .label-radio{
-              position: relative;
-          }
-
-          .label-radio::before{
-              width: 17px;
-              height: 17px;
-              border: 1px solid #A4A4A4;
-              content: '';
-              position: absolute;
-              left: -27px;
-              border-radius: 50%;
-          }
-
-          input[type="radio"]:checked+.label-radio::before{
-              background:  #F16D7F;
-          }
-
-        
-
-
-
-
-          .registration-block-form_title {
+         
           
+          .registration-block-form_title {
           font-weight: 300;
           font-size: 16px;
           color: black;
@@ -986,15 +946,110 @@ margin-top: 48px;
             border: 1px solid #A4A4A4;
         }
 
-        .registration-ps {
-            color: #B1B1B1;
-            font-weight: 300;
-            font-size: 13px;
-            margin-top: 15px;
+        
 
+
+        .text-none {
+            display: none;
         }
 
+        
+#other {
+    display: none;
+}
 
+.main_registration {
+    margin-top: 64px;
+    height: 611px;
+    width: 1600px;
+}
+
+.forms_block {
+    width: 359px;
+    height: 438px;
+    float:left;
+    position: relative;
+    margin-left: 230px;
+}
+
+.loyalty_block {
+    width: 652px;
+    height: 334px;
+    float:right;
+    position: relative;
+    margin-right: 230px;
+}
+
+.forms_block-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color:#222222;
+    padding-bottom: 20px;
+}
+
+.forms_block-form input {
+    width: 337px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+}
+
+.forms_block_form-padding {
+    padding-top: 21px;
+}
+
+input[type="radio"] {
+    display: none;
+  }
+
+  .checkbox-gender {
+      display: flex;
+      width:150px;
+      justify-content: space-between;
+      padding-top: 31px;
+      padding-left: 27px;
+      padding-bottom: 35px;
+
+  }
+  .label-radio{
+      position: relative;
+  }
+
+  .label-radio::before{
+      width: 17px;
+      height: 17px;
+      border: 1px solid #A4A4A4;
+      content: '';
+      position: absolute;
+      left: -27px;
+      border-radius: 50%;
+  }
+
+  input[type="radio"]:checked+.label-radio::before{
+      background:  #F16D7F;
+  }
+
+  .otst input {
+      padding-left: 30px;
+  }
+
+  input[type="text"] {
+      padding-left: 17px;
+  }
+
+  input[type="password"] {
+    padding-left: 17px;
+}
+
+.registration-ps {
+    color: #B1B1B1;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 15px;
+}
+  
+
+ 
 
 
 @media (max-width: 1599px) {
@@ -1002,7 +1057,7 @@ margin-top: 48px;
         width: 768px;
     }
 
-    #circle {
+    .circle {
        margin-left: 93.5%; 
     }
 
@@ -1015,8 +1070,8 @@ margin-top: 48px;
     }
 
     .name_img {
-        width: calc(800px * 0.5);
-        height: calc(765px * 0.5);
+        width: 400px;
+        height: 382.5px;
     }
 
     .name__content {
@@ -1084,6 +1139,7 @@ margin-top: 48px;
 
     .selection_FeturedItems_text {
         margin-top: 154px;
+        margin-bottom: 48px;
      }
 
      .index-selection_photos {
@@ -1097,14 +1153,14 @@ margin-top: 48px;
      }
 
     .button_browse-div {
-    margin-top: 32px;
+    margin-top: 660px;
+    margin-bottom: 95px;
     margin-left: 258px;
     }
 
      .selection-icons{
         width: 768px;
         height: 610px;
-        margin-top: 1180px;
     }
 
     .selection-icons-container_item {
@@ -1130,7 +1186,12 @@ margin-top: 48px;
     }
 
     .icons-footer {
-        margin-left: 588px;
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    position: absolute;
+    padding-left: 280px;
+    margin-top: -11px;
     }
 
     .footer-back {
@@ -1155,18 +1216,102 @@ margin-top: 48px;
     .footer-back_sub {
          margin-top: -300px;
          margin-left: 10px;
+         text-transform: uppercase;
          
     }
  
     .footer-back_sub-span {
      margin-left: -250px;
-     margin-top: 15px;
+     text-transform: uppercase;
+     
     }
  
     .e-mail_button {
         margin-left: 210px;
         margin-top: -204px;
     }
+
+    .registration-title_text, .registration_title {
+        width: 768px;
+    }
+
+    .registration-title_text {
+        padding-left: 16px;
+    }
+
+    .registration-block {
+        width: 768px;
+    }
+
+    .registration-block_title, .registration-block_text {
+        font-size: 16px;
+    }
+
+    .registration-block_text {
+        width: 354px;
+    }
+
+   .registration-block_information {
+    float:right;
+    width:354px;
+    }
+
+
+      #other {
+        display: block;
+    }
+
+    .checkbox-gender  {
+        width:208px;
+
+    }
+    .registration-block_list li {
+        font-size: 16px;
+    }
+    .registration-block_list{
+        width: 311px;
+        margin-top: 32px;
+        list-style: none;
+        font-weight: 300;
+        font-size: 24px;
+        color: black;
+        line-height: 36px;
+    
+    }
+
+   .registration-block_form {
+       margin-left: 16px;
+   }
+
+   .main_registration {
+    margin-top: 40px;
+    height: 611px;
+    width: 768px;
+}
+
+.forms_block {
+    width: 359px;
+    height: 438px;
+    float:left;
+    position: relative;
+    margin-left: 16px;
+}
+
+.loyalty_block {
+    width: 354px;
+    margin-right: 16px;
+}
+
+.registration-block_title, .registration-block_text, .registration-block_list {
+    font-size: 16px;
+}
+
+.registration-block_list li {
+    line-height: 19px;
+}
+
+
+   
 }
     
 @media (max-width: 767px) {
@@ -1174,7 +1319,7 @@ margin-top: 48px;
         width: 375px;
     }
 
-    #circle {
+    .circle {
        margin-left: 91.5%; 
     }
 
@@ -1204,8 +1349,6 @@ margin-top: 48px;
         margin-left: 30px;
         margin-top: 130px;
     }
-
-    
 
     .selection_stock_img {
         width: 344px;
@@ -1244,7 +1387,6 @@ margin-top: 48px;
 
      .selection-icons{
         width: 375px;
-        margin-top: 3016px;
        
     }
 
@@ -1255,9 +1397,11 @@ margin-top: 48px;
     }
 
     .button_browse-div {
-        margin: 0 auto;
-        margin-left: 50px;
+        margin-top: 2482px;
+            margin-bottom: 96px;
+            margin-left: 74px;
         }
+       
 
         .footer-back_bottom {
             width: 375px;
@@ -1266,11 +1410,7 @@ margin-top: 48px;
     
         .footer {
             width: 375px;
-           
         }
-    
-        
-       
     
         .footer-back {
             width: 375px;
@@ -1327,12 +1467,51 @@ margin-top: 48px;
 
         .copyright {
             margin-left: 62px;
-            margin-top: 115px;
+            margin-top: 100px;
         }
 
         .icons-footer {
-            margin-left: 114px;
-            margin-top: 43px;
+            display: flex;
+            justify-content: space-between;
+            width: 145px;
+            position: absolute;
+            padding-left: 57px;
+            margin-top: -43px;
         }
+
+        .registration-title_text, .registration_title {
+            width: 375px;
+        }
+
+        .registration-title_text {
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .main_registration {
+            height: 1000px;
+            width: 375px;
+        }
+        
+        .forms_block {
+            width: 359px;
+            height: 567px;
+            margin-left: 8px;
+            
+        }
+
+        .loyalty_block {
+            width: 358px;
+            height: 334px;
+            margin-right: 8px;
+        }
+        
+
+
        
+
+        
+    
+       
+
     }
